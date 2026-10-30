@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Labina | AI/ML Engineer Portfolio</title>
+<meta name="description" content="Portfolio of Labina, an AI/ML Engineer specializing in Python, machine learning pipelines, and Flask web applications." />
+<meta property="og:title" content="Labina | AI/ML Engineer Portfolio" />
+<meta property="og:description" content="Python, machine learning pipelines and Flask apps. See my projects and get in touch." />
+<meta property="og:image" content="src/assets/images/labina-portrait.jpg" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230F1330%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%23FFC857%22 font-family=%22monospace%22 font-weight=%22700%22>l_</text></svg>" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="src/css/style.css" />
+<link rel="stylesheet" href="src/css/animations.css" />
+</head>
+<body>
+<canvas id="bg-net" aria-hidden="true"></canvas>
+<canvas id="fx" aria-hidden="true"></canvas>
+<a class="skip-link" href="#home">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="#home" aria-label="Labina, back to top">labina<span class="brand-cursor" aria-hidden="true">_</span></a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HOME / HERO ================= -->
+  <section id="home" class="hero" data-garden="240">
+    <div class="hero-stars" aria-hidden="true"></div>
+    <canvas id="hero-net" class="hero-net" aria-hidden="true"></canvas>
+
+    <div class="container hero-inner">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="hello-chip">
+            <svg class="wave-hand" viewBox="0 0 130 150" aria-hidden="true">
+              <defs>
+                <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#E6AE80"/><stop offset="1" stop-color="#BC7948"/>
+                </linearGradient>
+              </defs>
+              <g class="hand-wave">
+                <g fill="url(#skin)">
+                  <rect x="31" y="20" width="14" height="64" rx="7" transform="rotate(-14 38 84)"/>
+                  <rect x="47" y="8"  width="14" height="74" rx="7" transform="rotate(-4 54 84)"/>
+                  <rect x="63" y="10" width="14" height="72" rx="7" transform="rotate(5 70 84)"/>
+                  <rect x="79" y="26" width="13" height="58" rx="6.5" transform="rotate(15 85 84)"/>
+                  <rect x="12" y="60" width="14" height="48" rx="7" transform="rotate(-46 19 100)"/>
+                  <path d="M30 78 C30 70 38 66 46 66 H80 C90 66 94 72 94 82 V106 C94 126 80 138 62 138 C44 138 30 126 30 106 Z"/>
+                </g>
+                <rect x="33" y="128" width="58" height="22" rx="8" fill="#6E1F3B"/>
+              </g>
+            </svg>
+            <span>AI / ML Engineer · Dhanbad, India</span>
+          </p>
+          <h1 class="hero-title">Hello, welcome to my portfolio.</h1>
+          <p class="hero-sub">I'm Labina. I turn messy, real-world data into clean pipelines, working models, and small web apps people can actually use.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+          <dl class="hero-meta">
+            <div>
+              <dt>Connect</dt>
+              <dd>
+                <a href="https://github.com/Labina25" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/labina-lnu-16110a3b9" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:labina2526@gmail.com">Email</a>
+              </dd>
+            </div>
+            <div>
+              <dt>Currently into</dt>
+              <dd><span>ML pipelines</span><span>Python &amp; Flask</span><span>Feature engineering</span></dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="hero-photo">
+          <img src="src/assets/images/labina-portrait.jpg" width="690" height="828" fetchpriority="high"
+               alt="Portrait of Labina outdoors in sunglasses and a black and grey jacket, with a snow-capped mountain behind her" />
+          <canvas id="photo-net" class="photo-net" aria-hidden="true"></canvas>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section-pad" data-garden="170">
+    <div class="container">
+      <p class="section-kicker reveal"><b>01</b> / About</p>
+      <h2 class="section-title reveal">Good models. Clean pipelines.</h2>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>I'm a BCA graduate who fell for the moment raw, messy data turns into something a model can actually learn from. Most of my work lives in <strong>Python</strong>: cleaning datasets, engineering features, and building regression pipelines with <strong>scikit-learn</strong>, then wrapping the result in a <strong>Flask</strong> app so people who've never opened a notebook can still use it.</p>
+          <p>Before I leaned fully into ML, I sat on the other side of software as a QA analyst at <strong>Deloitte USI</strong>, testing components, tracking bugs in JIRA, and writing the kind of structured reports that make sure nothing ships broken. That habit of asking <em>does this actually work, and can I prove it?</em> followed me straight into machine learning, where clean evaluation metrics matter as much as clever models.</p>
+        </div>
+
+        <aside class="about-side reveal">
+          <div class="code-card" aria-label="The short version, as code">
+            <p class="code-title"># the short version</p>
+<pre><code><span class="k">while</span> curious:
+    <span class="f">clean</span>(data)
+    <span class="f">train</span>(model)
+    <span class="f">ship</span>(app)</code></pre>
+          </div>
+          <p class="side-label">My everyday toolkit</p>
+          <div class="about-tags">
+            <span>Python</span><span>SQL</span><span>Scikit-Learn</span><span>Pandas</span><span>NumPy</span><span>Flask</span><span>Git</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section id="education" class="section-pad" data-garden="160">
+    <div class="container">
+      <p class="section-kicker reveal"><b>02</b> / Education</p>
+      <h2 class="section-title reveal">Where the foundation was built</h2>
+      <p class="section-lede reveal">Four years of coursework that took me from syntax to systems thinking.</p>
+
+      <div class="timeline-card reveal">
+        <div class="timeline-head">
+          <span class="timeline-org">Narula Institute of Technology, Kolkata</span>
+          <span class="timeline-when">Graduated July 2023</span>
+        </div>
+        <p class="timeline-role">Bachelor of Computer Applications (BCA) · GPA 8.8 / 10.0</p>
+        <ul class="timeline-list">
+          <li>Built strong foundations in Python programming, data structures, and database management systems (MySQL).</li>
+          <li>Studied web technologies and software engineering principles, from HTML/CSS to structured project design.</li>
+          <li>Graduated with an 8.8/10.0 GPA across four years of consistent academic performance.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>Python</span><span>DBMS</span><span>Data Structures</span><span>Web Technologies</span><span>Software Engineering</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section-pad" data-garden="160">
+    <div class="container">
+      <p class="section-kicker reveal"><b>03</b> / Experience</p>
+      <h2 class="section-title reveal">Where I put the foundation to work</h2>
+      <p class="section-lede reveal">Real deployments, real bugs, real stakeholders — before I ever wrote a line of ML code professionally.</p>
+
+      <div class="timeline-card leaf reveal">
+        <div class="timeline-head">
+          <span class="timeline-org">Deloitte USI</span>
+          <span class="timeline-when">Oct 2023 – Dec 2023</span>
+        </div>
+        <p class="timeline-role">Junior Quality Assurance · Associate Analyst</p>
+        <ul class="timeline-list">
+          <li>Ran functional, manual, and automated tests across Adobe Experience Manager (AEM) components to confirm system stability.</li>
+          <li>Tracked bugs and test case execution in JIRA, keeping validation results clearly documented.</li>
+          <li>Built testing-metrics decks in Excel and PowerPoint for regular project status updates.</li>
+          <li>Partnered with engineers and analysts to diagnose defects and protect data integrity across deployment builds.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span>AEM</span><span>JIRA</span><span>Selenium</span><span>Excel</span><span>PowerPoint</span><span>QA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section-pad" data-garden="170">
+    <div class="container">
+      <p class="section-kicker reveal"><b>04</b> / Skills</p>
+      <h2 class="section-title reveal">Tools I reach for</h2>
+      <p class="section-lede reveal">From core language and libraries, to ML concepts, to the tools that keep a project shippable.</p>
+    </div>
+
+    <div class="skills-marquee reveal">
+      <div class="marquee-row">
+        <div class="marquee-track">
+          <span class="skill-box"><span class="dot"></span>Python</span>
+          <span class="skill-box"><span class="dot"></span>SQL (MySQL)</span>
+          <span class="skill-box"><span class="dot"></span>Scikit-Learn</span>
+          <span class="skill-box"><span class="dot"></span>Pandas</span>
+          <span class="skill-box"><span class="dot"></span>NumPy</span>
+          <span class="skill-box"><span class="dot"></span>Matplotlib</span>
+          <span class="skill-box"><span class="dot"></span>Seaborn</span>
+          <span class="skill-box"><span class="dot"></span>Python</span>
+          <span class="skill-box"><span class="dot"></span>SQL (MySQL)</span>
+          <span class="skill-box"><span class="dot"></span>Scikit-Learn</span>
+          <span class="skill-box"><span class="dot"></span>Pandas</span>
+          <span class="skill-box"><span class="dot"></span>NumPy</span>
+          <span class="skill-box"><span class="dot"></span>Matplotlib</span>
+          <span class="skill-box"><span class="dot"></span>Seaborn</span>
+        </div>
+      </div>
+
+      <div class="marquee-row reverse">
+        <div class="marquee-track">
+          <span class="skill-box"><span class="dot"></span>Data Preprocessing</span>
+          <span class="skill-box"><span class="dot"></span>Feature Engineering</span>
+          <span class="skill-box"><span class="dot"></span>Regression Modeling</span>
+          <span class="skill-box"><span class="dot"></span>Model Evaluation</span>
+          <span class="skill-box"><span class="dot"></span>EDA</span>
+          <span class="skill-box"><span class="dot"></span>Flask</span>
+          <span class="skill-box"><span class="dot"></span>HTML5</span>
+          <span class="skill-box"><span class="dot"></span>CSS3</span>
+          <span class="skill-box"><span class="dot"></span>JavaScript</span>
+          <span class="skill-box"><span class="dot"></span>Data Preprocessing</span>
+          <span class="skill-box"><span class="dot"></span>Feature Engineering</span>
+          <span class="skill-box"><span class="dot"></span>Regression Modeling</span>
+          <span class="skill-box"><span class="dot"></span>Model Evaluation</span>
+          <span class="skill-box"><span class="dot"></span>EDA</span>
+          <span class="skill-box"><span class="dot"></span>Flask</span>
+          <span class="skill-box"><span class="dot"></span>HTML5</span>
+          <span class="skill-box"><span class="dot"></span>CSS3</span>
+          <span class="skill-box"><span class="dot"></span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="marquee-row">
+        <div class="marquee-track">
+          <span class="skill-box"><span class="dot"></span>Git & GitHub</span>
+          <span class="skill-box"><span class="dot"></span>JIRA</span>
+          <span class="skill-box"><span class="dot"></span>Selenium</span>
+          <span class="skill-box"><span class="dot"></span>Adobe Experience Manager</span>
+          <span class="skill-box"><span class="dot"></span>Excel</span>
+          <span class="skill-box"><span class="dot"></span>PowerPoint</span>
+          <span class="skill-box"><span class="dot"></span>Analytical Thinking</span>
+          <span class="skill-box"><span class="dot"></span>Communication</span>
+          <span class="skill-box"><span class="dot"></span>Git & GitHub</span>
+          <span class="skill-box"><span class="dot"></span>JIRA</span>
+          <span class="skill-box"><span class="dot"></span>Selenium</span>
+          <span class="skill-box"><span class="dot"></span>Adobe Experience Manager</span>
+          <span class="skill-box"><span class="dot"></span>Excel</span>
+          <span class="skill-box"><span class="dot"></span>PowerPoint</span>
+          <span class="skill-box"><span class="dot"></span>Analytical Thinking</span>
+          <span class="skill-box"><span class="dot"></span>Communication</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section-pad" data-garden="170">
+    <div class="container">
+      <p class="section-kicker reveal"><b>05</b> / Projects</p>
+      <h2 class="section-title reveal">Built, tested, shipped.</h2>
+      <p class="section-lede reveal">End-to-end ML apps, data-analysis notebooks, and full front-end builds. More on <a class="inline-link" href="https://github.com/Labina25" target="_blank" rel="noopener">GitHub</a>.</p>
+
+      <div class="project-grid reveal">
+
+        <article class="project-card featured">
+          <p class="project-index">01 / flagship</p>
+          <h3 class="project-tagline">Data in. Predictions out.</h3>
+          <p class="project-name">mlproject_</p>
+          <p class="project-desc">A modular machine-learning web pipeline that automates data ingestion, feature transformation, model training, and prediction. Scikit-Learn's <code>ColumnTransformer</code> and <code>Pipeline</code> handle scaling and encoding, and the saved model is served through a Flask app for real-time predictions.</p>
+          <div class="project-tags"><span>Python</span><span>Scikit-Learn</span><span>Flask</span><span>Pandas</span></div>
+          <a class="project-link" href="https://github.com/Labina25/mlproject" target="_blank" rel="noopener">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <p class="project-index">02 / notebook</p>
+          <h3 class="project-tagline">Read the signs of fire.</h3>
+          <p class="project-name">ML-test-algerian_forest_data_</p>
+          <p class="project-desc">Exploratory data analysis and regression modelling on the Algerian Forest Fires dataset, comparing algorithms to predict the Fire Weather Index.</p>
+          <div class="project-tags"><span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>EDA</span></div>
+          <a class="project-link" href="https://github.com/Labina25/ML-test-algerian_forest_data" target="_blank" rel="noopener">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <p class="project-index">03 / ml pipeline</p>
+          <h3 class="project-tagline">Profit or loss? Ask the model.</h3>
+          <p class="project-name">Stock-Market_</p>
+          <p class="project-desc">A machine-learning project that predicts whether a company is profitable, organised as a modular pipeline: data ingestion, validation, transformation, model training and evaluation, with saved model artifacts.</p>
+          <div class="project-tags"><span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>ML Pipeline</span></div>
+          <a class="project-link" href="https://github.com/Labina25/Stock-Market" target="_blank" rel="noopener">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <p class="project-index">04 / web app</p>
+          <h3 class="project-tagline">Home-cooked, delivered.</h3>
+          <p class="project-name">Aharvika_</p>
+          <p class="project-desc">AHARVIKA, a tiffin service website with a homepage and a kitchen-registration flow, built from scratch with HTML, CSS, and JavaScript.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a class="project-link" href="https://github.com/Labina25/Aharvika" target="_blank" rel="noopener">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section-pad" data-garden="170">
+    <div class="container">
+      <p class="section-kicker reveal"><b>06</b> / Contact</p>
+      <h2 class="section-title reveal">Let's talk</h2>
+      <p class="section-lede reveal">Open to ML/Data Engineering roles, collaborations, or just a good conversation about messy datasets.</p>
+
+      <div class="contact-grid">
+        <div class="contact-intro reveal">
+          <p>The fastest way to reach me is the form, or drop a line directly using any of these:</p>
+          <div class="contact-list">
+            <a href="mailto:labina2526@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+              labina2526@gmail.com
+            </a>
+            <a href="https://github.com/Labina25" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9 8.5l3 3 3-3"/></svg>
+              github.com/Labina25
+            </a>
+            <a href="https://linkedin.com/in/labina-lnu-16110a3b9" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="10" r="2"/><circle cx="10" cy="17" r="2"/><path d="M8.4 8.2l7 1.2M9 15.6l6.4-4.1"/></svg>
+              linkedin.com/in/labina-lnu-16110a3b9
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <!-- honeypot field to deter simple spam bots -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <div class="footer-brand">
+      <a class="brand" href="#home" aria-label="Labina, back to top">labina<span class="brand-cursor" aria-hidden="true">_</span></a>
+      <p class="footer-note">// keep learning, keep shipping</p>
+    </div>
+
+    <div class="social-row">
+      <a href="https://github.com/Labina25" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M9 8.5l3 3 3-3"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/labina-lnu-16110a3b9" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="2"/><circle cx="17" cy="10" r="2"/><circle cx="10" cy="17" r="2"/><path d="M8.4 8.2l7 1.2M9 15.6l6.4-4.1"/></svg>
+      </a>
+      <a href="mailto:labina2526@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+      </a>
+      <!-- TODO: replace # with your Instagram profile URL -->
+      <a href="#" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+    </div>
+
+    <p class="footer-copy">© <span id="year">2026</span> Labina. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="src/js/scene/core.js"></script>
+<script src="src/js/scene/flora.js"></script>
+<script src="src/js/scene/garden.js"></script>
+<script src="src/js/scene/neural.js"></script>
+<script src="src/js/scene/butterflies.js"></script>
+<script src="src/js/scene/rocket.js"></script>
+<script src="src/js/scene/index.js"></script>
+<script src="src/js/main.js"></script>
+</body>
+</html>
